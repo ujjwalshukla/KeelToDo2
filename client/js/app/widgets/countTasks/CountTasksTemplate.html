@@ -1,0 +1,8 @@
+{{#if length}}
+	<div class="countAreas">
+		<span class="js-tasksCount">{{itemLeft}} items Left</span>
+		{{#if anyItemSelected}}
+			<a class="js-btnDeleteCompleted">clear {{itemSelected}} completed item</a>
+		{{/if}}
+	</div>
+{{/if}}

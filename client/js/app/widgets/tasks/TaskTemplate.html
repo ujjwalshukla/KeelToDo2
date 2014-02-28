@@ -1,0 +1,7 @@
+{{#if edit}}
+	<input type="text" class="js-taskEdit" value={{convertItem taskData}}>
+{{else}}
+	<input type="checkbox" class='js-checkboxTask' {{convertCompleted taskData}}>
+	<span class='js-taskSpan {{convertCompleted taskData}}'>{{convertItem taskData}}</span>
+	<a class="js-btnDelete"></a>
+{{/if}}
